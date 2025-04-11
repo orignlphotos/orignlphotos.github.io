@@ -23,7 +23,8 @@ body {
 .form_container,
 .form_button,
 .about_me_content h3,
-.services_header{
+.services_header,
+.card_text{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -149,6 +150,12 @@ h3 {
     display: none;
 }
 
+#label,
+#desc_more,
+#pricing_more {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
 .read {
     background-color: white;
     border: 0px;
@@ -162,4 +169,62 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 5px;
 }
+
+.add_ons {
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.categories_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories_background{
+    background-color: #1369A5;
+    width: calc(100% - 50px);
+    padding: 50px 0px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories_cards{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card_photo{
+    width: 200px;
+    height: 300px;
+}
+
+.card_text,
+.headshot_text{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 15px;
+    position: relative;
+    bottom: 33px;
+    left: 10px;
+}
+
+.headshot_text{
+    padding: 0px;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+}
+
+
