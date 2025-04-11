@@ -1,5 +1,11 @@
 let read_buttons = document.querySelectorAll(".read");
 
+window.addEventListener('load', () => {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = '1';
+});
+  
+
 for(let i = 0; i < read_buttons.length; i++){
     let button = read_buttons[i];
     button.addEventListener("click", () => {
